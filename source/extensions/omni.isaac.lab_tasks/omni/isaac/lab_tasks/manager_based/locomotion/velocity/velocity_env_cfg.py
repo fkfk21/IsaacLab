@@ -253,6 +253,7 @@ class RewardsCfg:
     flat_orientation_l2 = RewTerm(func=mdp.flat_orientation_l2, weight=0.0)
     dof_vel_l2 = RewTerm(func=mdp.joint_vel_l2, weight=0.0)
     dof_pos_limits = RewTerm(func=mdp.joint_pos_limits, weight=0.0)
+    alive = RewTerm(func=mdp.is_alive, weight=0.0)
 
 
 @configclass
